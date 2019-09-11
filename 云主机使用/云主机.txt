@@ -1,0 +1,4 @@
+腾讯，阿里（百度也可能）有学生优惠价的云主机
+
+服务器装上宝塔面板后（将php,phpadmin,mysql,apach都装上，以免数据库打不开），要在腾讯云配置安全组，然后将其关联到自己的云主机上
+apache http服务器 响应用户的请求（php前端） apache连接数据库mysql phpmyadmin使数据库可视化（用于交互方便）

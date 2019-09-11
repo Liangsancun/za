@@ -1,0 +1,20 @@
+def load_stopwords(file_path):
+    '''
+    加载停用词表
+    param: 停用词表文件路径
+    return：停用词列表
+    '''
+    stop_words=[]
+    # encoding='utf-8'时，第一个字之前会出现'\ufeff'
+    with open(file_path,'r',encoding='utf-8-sig') as f:
+        for line in f:
+            #去掉停用词两边的\r和各种空格
+            stop_words.append(line.strip())
+
+    return stop_words
+
+
+
+stop_words = load_stopwords(r'I:\python小技巧\stopwords.txt')
+或
+self.stopword_set=set([line.strip() for line in open(stopword_txt, 'r', encoding='utf-8').readlines()])

@@ -1,0 +1,7 @@
+# 修改加载cilin.txt的位置
+
+import my_cilin
+
+cilin = my_cilin.Get_cilin_info()
+# 获取同义词列表
+syns = cilin.get_syns_by_word('str')

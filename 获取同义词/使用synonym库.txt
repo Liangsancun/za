@@ -1,0 +1,3 @@
+import synonyms as syn
+ # 返回[[近义词],[概率]]
+syns_1 = syn.nearby(keyword)[0]
