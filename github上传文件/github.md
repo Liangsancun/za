@@ -194,4 +194,19 @@ git push # 将本地仓库的文件同步到github指定仓库 git push origin�
       使用git bash， 单击右键即可
       ```
 
+   4. ```python
+      #问题
+      git push时出现：
+      ssh: connect to host github.com port 22: Connection timed out
+      fatal: Could not read from remote repository.
       
+      Please make sure you have the correct access rights
+      and the repository exists.
+      
+      # 原因：之前保存的github的ip地址不能用了
+      #解决办法
+      22端口号是ssh的端口号
+      我在hosts文件里添加了新查找的github.com的IP地址，就可以了【git push的时候，又自动把ip地址放到.ssh里的know_hosts文件里。
+      ```
+   
+   5. 
